@@ -1,13 +1,13 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>dk.kmd.devops.build</groupId>
+	<groupId>dk.devops.build</groupId>
 	<artifactId>master-pom</artifactId>
 	<version>1.0.2-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<parent>
-		<groupId>dk.kmd.devops.build</groupId>
+		<groupId>dk.devops.build</groupId>
 		<artifactId>poms</artifactId>
 		<version>1.0.2-SNAPSHOT</version>
 	</parent>
@@ -22,8 +22,8 @@
 	<url>${httpHome}/${url.location}</url>
 
 	<scm>
-		<connection>scm:svn:http://svn.kmd.dk:3690/svn/devops/source/projects/poms/trunk/poms/master-pom</connection>
-		<developerConnection>scm:svn:http://svn.kmd.dk:3690/svn/devops/source/projects/poms/master-pom</developerConnection>
+		<connection>scm:svn:http://svn.dk:3690/svn/devops/source/projects/poms/trunk/poms/master-pom</connection>
+		<developerConnection>scm:svn:http://svn.dk:3690/svn/devops/source/projects/poms/master-pom</developerConnection>
 	</scm>
 
 	<dependencyManagement>
@@ -41,8 +41,8 @@
 	</dependencyManagement>
 
 	<organization>
-		<name>KMD</name>
-		<url>http://www.kmd.dk</url>
+		<name>noname</name>
+		<url>http://www.noname.dk</url>
 	</organization>
 
 	<build>
@@ -74,7 +74,7 @@
 					<version>2.17</version>
 					<dependencies>
 						<dependency>
-							<groupId>dk.kmd.devops.build</groupId>
+							<groupId>dk.devops.build</groupId>
 							<artifactId>master-pom-resources</artifactId>
 							<version>1.0.2-SNAPSHOT</version>
 						</dependency>
@@ -162,8 +162,8 @@
 				<executions>
 					<execution>
 						<configuration>
-							<suppressionsLocation>kmd-checkstyle-suppressions.xml</suppressionsLocation>
-							<configLocation>kmd-checkstyle.xml</configLocation>
+							<suppressionsLocation>my-checkstyle-suppressions.xml</suppressionsLocation>
+							<configLocation>my-checkstyle.xml</configLocation>
 							<consoleOutput>true</consoleOutput>
 							<failsOnError>false</failsOnError>
 						</configuration>
